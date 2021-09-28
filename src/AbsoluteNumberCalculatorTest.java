@@ -11,4 +11,18 @@ class AbsoluteNumberCalculatorTest {
         int result = AbsoluteNumberCalculator.findAbsolute(number);
         assertEquals(expected, number);
     }
+    @Test
+    void findAbsolute1() {
+        int number = 1;
+        int expected = 1;
+        int result = AbsoluteNumberCalculator.findAbsolute(number);
+        assertEquals(expected, number);
+    }
+    @Test
+    void findAbsoluteNegative1() {
+        int number = -1;
+        int expected = 1;
+        int result = AbsoluteNumberCalculator.findAbsolute(number);
+        assertEquals(expected, number);
+    }
 }
